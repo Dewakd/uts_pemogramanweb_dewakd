@@ -1,0 +1,20 @@
+@import url("fonts.css");
+
+:root{
+    --color-text-default : rgb(218, 197, 167);
+    --color-text-muted : rgb(218, 197, 167, 60%);
+
+
+    --color-background: rgb(14, 14, 14);
+    --color-background-muted :rgb(218, 197, 167, 5%);
+}
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+

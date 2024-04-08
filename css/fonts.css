@@ -1,0 +1,317 @@
+
+@font-face {
+  font-family: 'Chillax-Extralight';
+  src: url('fonts/Chillax-Extralight.woff2') format('woff2'),
+       url('fonts/Chillax-Extralight.woff') format('woff'),
+       url('fonts/Chillax-Extralight.ttf') format('truetype');
+  font-weight: 200;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Chillax-Light';
+  src: url('fonts/Chillax-Light.woff2') format('woff2'),
+       url('fonts/Chillax-Light.woff') format('woff'),
+       url('fonts/Chillax-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Chillax-Regular';
+  src: url('fonts/Chillax-Regular.woff2') format('woff2'),
+       url('fonts/Chillax-Regular.woff') format('woff'),
+       url('fonts/Chillax-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Chillax-Medium';
+  src: url('fonts/Chillax-Medium.woff2') format('woff2'),
+       url('fonts/Chillax-Medium.woff') format('woff'),
+       url('fonts/Chillax-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Chillax-Semibold';
+  src: url('fonts/Chillax-Semibold.woff2') format('woff2'),
+       url('fonts/Chillax-Semibold.woff') format('woff'),
+       url('fonts/Chillax-Semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Chillax-Bold';
+  src: url('fonts/Chillax-Bold.woff2') format('woff2'),
+       url('fonts/Chillax-Bold.woff') format('woff'),
+       url('fonts/Chillax-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Chillax-Variable';
+  src: url('fonts/Chillax-Variable.woff2') format('woff2'),
+       url('fonts/Chillax-Variable.woff') format('woff'),
+       url('fonts/Chillax-Variable.ttf') format('truetype');
+  font-weight: 200 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi-Light';
+  src: url('fonts/Satoshi-Light.woff2') format('woff2'),
+       url('fonts/Satoshi-Light.woff') format('woff'),
+       url('fonts/Satoshi-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Satoshi-LightItalic';
+  src: url('fonts/Satoshi-LightItalic.woff2') format('woff2'),
+       url('fonts/Satoshi-LightItalic.woff') format('woff'),
+       url('fonts/Satoshi-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Satoshi-Regular';
+  src: url('fonts/Satoshi-Regular.woff2') format('woff2'),
+       url('fonts/Satoshi-Regular.woff') format('woff'),
+       url('fonts/Satoshi-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Satoshi-Italic';
+  src: url('fonts/Satoshi-Italic.woff2') format('woff2'),
+       url('fonts/Satoshi-Italic.woff') format('woff'),
+       url('fonts/Satoshi-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Satoshi-Medium';
+  src: url('fonts/Satoshi-Medium.woff2') format('woff2'),
+       url('fonts/Satoshi-Medium.woff') format('woff'),
+       url('fonts/Satoshi-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Satoshi-MediumItalic';
+  src: url('fonts/Satoshi-MediumItalic.woff2') format('woff2'),
+       url('fonts/Satoshi-MediumItalic.woff') format('woff'),
+       url('fonts/Satoshi-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Satoshi-Bold';
+  src: url('fonts/Satoshi-Bold.woff2') format('woff2'),
+       url('fonts/Satoshi-Bold.woff') format('woff'),
+       url('fonts/Satoshi-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Satoshi-BoldItalic';
+  src: url('fonts/Satoshi-BoldItalic.woff2') format('woff2'),
+       url('fonts/Satoshi-BoldItalic.woff') format('woff'),
+       url('fonts/Satoshi-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Satoshi-Black';
+  src: url('fonts/Satoshi-Black.woff2') format('woff2'),
+       url('fonts/Satoshi-Black.woff') format('woff'),
+       url('fonts/Satoshi-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Satoshi-BlackItalic';
+  src: url('fonts/Satoshi-BlackItalic.woff2') format('woff2'),
+       url('fonts/Satoshi-BlackItalic.woff') format('woff'),
+       url('fonts/Satoshi-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-display: swap;
+  font-style: italic;
+}
+/**
+* This is a variable font
+* You can control variable axes as shown below:
+* font-variation-settings: wght 900.0;
+*
+* available axes:
+'wght' (range from 300.0 to 900.0
+*/
+@font-face {
+  font-family: 'Satoshi-Variable';
+  src: url('fonts/Satoshi-Variable.woff2') format('woff2'),
+       url('fonts/Satoshi-Variable.woff') format('woff'),
+       url('fonts/Satoshi-Variable.ttf') format('truetype');
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: normal;
+}
+/**
+* This is a variable font
+* You can control variable axes as shown below:
+* font-variation-settings: wght 900.0;
+*
+* available axes:
+'wght' (range from 300.0 to 900.0
+*/
+@font-face {
+  font-family: 'Satoshi-VariableItalic';
+  src: url('fonts/Satoshi-VariableItalic.woff2') format('woff2'),
+       url('fonts/Satoshi-VariableItalic.woff') format('woff'),
+       url('fonts/Satoshi-VariableItalic.ttf') format('truetype');
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gambetta-Light';
+  src: url('fonts/Gambetta-Light.woff2') format('woff2'),
+       url('fonts/Gambetta-Light.woff') format('woff'),
+       url('fonts/Gambetta-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gambetta-LightItalic';
+  src: url('fonts/Gambetta-LightItalic.woff2') format('woff2'),
+       url('fonts/Gambetta-LightItalic.woff') format('woff'),
+       url('fonts/Gambetta-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Gambetta-Regular';
+  src: url('fonts/Gambetta-Regular.woff2') format('woff2'),
+       url('fonts/Gambetta-Regular.woff') format('woff'),
+       url('fonts/Gambetta-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gambetta-Italic';
+  src: url('fonts/Gambetta-Italic.woff2') format('woff2'),
+       url('fonts/Gambetta-Italic.woff') format('woff'),
+       url('fonts/Gambetta-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Gambetta-Medium';
+  src: url('fonts/Gambetta-Medium.woff2') format('woff2'),
+       url('fonts/Gambetta-Medium.woff') format('woff'),
+       url('fonts/Gambetta-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gambetta-MediumItalic';
+  src: url('fonts/Gambetta-MediumItalic.woff2') format('woff2'),
+       url('fonts/Gambetta-MediumItalic.woff') format('woff'),
+       url('fonts/Gambetta-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Gambetta-Semibold';
+  src: url('fonts/Gambetta-Semibold.woff2') format('woff2'),
+       url('fonts/Gambetta-Semibold.woff') format('woff'),
+       url('fonts/Gambetta-Semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gambetta-SemiboldItalic';
+  src: url('fonts/Gambetta-SemiboldItalic.woff2') format('woff2'),
+       url('fonts/Gambetta-SemiboldItalic.woff') format('woff'),
+       url('fonts/Gambetta-SemiboldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Gambetta-Bold';
+  src: url('fonts/Gambetta-Bold.woff2') format('woff2'),
+       url('fonts/Gambetta-Bold.woff') format('woff'),
+       url('fonts/Gambetta-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gambetta-BoldItalic';
+  src: url('fonts/Gambetta-BoldItalic.woff2') format('woff2'),
+       url('fonts/Gambetta-BoldItalic.woff') format('woff'),
+       url('fonts/Gambetta-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: italic;
+}
+/**
+* This is a variable font
+* You can control variable axes as shown below:
+* font-variation-settings: wght 300.0wght 700.0;
+*
+* available axes:
+'wght' (range from 300.0 to 700.0'wght' (range from 300.0 to 700.0
+*/
+@font-face {
+  font-family: 'Gambetta-Variable';
+  src: url('fonts/Gambetta-Variable.woff2') format('woff2'),
+       url('fonts/Gambetta-Variable.woff') format('woff'),
+       url('fonts/Gambetta-Variable.ttf') format('truetype');
+  font-weight: 300 700;
+  font-display: swap;
+  font-style: normal;
+}
+/**
+* This is a variable font
+* You can control variable axes as shown below:
+* font-variation-settings: wght 300.0wght 700.0;
+*
+* available axes:
+'wght' (range from 300.0 to 700.0'wght' (range from 300.0 to 700.0
+*/
+@font-face {
+  font-family: 'Gambetta-VariableItalic';
+  src: url('fonts/Gambetta-VariableItalic.woff2') format('woff2'),
+       url('fonts/Gambetta-VariableItalic.woff') format('woff'),
+       url('fonts/Gambetta-VariableItalic.ttf') format('truetype');
+  font-weight: 300 700;
+  font-display: swap;
+  font-style: italic;
+}
+
