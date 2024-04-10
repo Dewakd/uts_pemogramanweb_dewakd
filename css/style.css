@@ -3,6 +3,7 @@
 :root{
     --color-text-default : rgb(218, 197, 167);
     --color-text-muted : rgb(218, 197, 167, 60%);
+    
 
 
     --color-background: rgb(14, 14, 14);
@@ -18,3 +19,153 @@
     scroll-behavior: smooth;
 }
 
+body{
+    background-color: var(--color-background);
+    font-family: 'Chillax-Regular';
+}
+
+p,li,a,span,h1{
+    color: var(--color-text-default);
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.navbar__section .container{
+    display: flex;
+    justify-content: center;
+}
+
+.navbar__box{
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    margin: 30px 10px 0 10px;
+    border: 1px solid var(--color-text-default);
+    background-color: var(--color-background-muted);
+}
+
+.logo p,
+.navbar li
+.navbar__box span{
+    cursor: pointer;
+}
+
+.logo p{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.navbar{
+    display: flex;
+    margin: 0 20px;
+}
+
+.navbar li{
+    margin-top: 3px;
+    text-transform: uppercase;
+    padding: 5px;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+.navbar li:hover{
+    background-color: var(--color-text-default);
+}
+
+.navbar li:hover > a{
+    font-weight: 700;
+    color: black
+}
+
+.navbar__box > span{
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: var(--color-text-default);
+    border: 1px solid var(--color-text-default);
+}
+
+.navbar__box > span a{
+    color: var(--color-background);
+    font-weight: 600;
+}
+
+.navbar__box > span:hover{
+    background-color: transparent;
+    border: 1px solid var(--color-text-default);
+}
+
+.navbar__box span:hover > a{
+    color: var(--color-text-default);
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger .bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3 ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--color-text-default);
+}
+
+
+
+@media (max-width: 1280px){
+
+}
+
+@media (max-width: 1024px){
+
+}
+
+@media (max-width: 768px){
+
+}
+
+@media (max-width: 640px){
+    .navbar__box{
+        justify-content: space-between;
+        width: 100%;
+        margin: 0;
+        border: none;
+        border-bottom: 1px solid var(--color-text-default);
+    }
+
+    .navbar__box > .hamburger,
+    .navbar__box > span{
+        margin: 0 20px;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    .hamburger{
+        display: block;
+    }
+}
+
+@media (max-width: 475px){
+    .navbar__box > .hamburger,
+    .navbar__box > span{
+        margin: 0 15px;
+    }
+}
