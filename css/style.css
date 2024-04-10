@@ -8,6 +8,7 @@
 
     --color-background: rgb(14, 14, 14);
     --color-background-muted :rgb(218, 197, 167, 5%);
+    --color-border-muted :rgb(218, 197, 167, 15%);
 }
 
 *,
@@ -24,7 +25,7 @@ body{
     font-family: 'Chillax-Regular';
 }
 
-p,li,a,span,h1{
+p,li,a,span,h1,h2,h3{
     color: var(--color-text-default);
 }
 
@@ -185,6 +186,87 @@ a{
     color: var(--color-text-default);
 }
 
+.logo__box{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card__box{
+    display: grid;
+    grid-template-rows: 310px;
+    grid-template-columns: repeat(auto-fit, minmax(445px, 445px));
+    gap: 1em;
+    justify-content: center;
+    margin-top: 3em;
+}
+
+.card-item{
+    background-color: var(--color-background-muted);
+    border: 1px solid var(--color-border-muted);
+}
+
+.card-content{
+    padding: 50px;
+}
+
+.card-content .text p,
+.card-content .text h3,
+.card-content .text span{
+    font-family: 'Satoshi-Light';
+    font-weight: 300;
+}
+
+
+
+.card-content .text span,
+.card-content .text p{
+    color: var(--color-text-muted);
+}
+
+.card-content .text h3{
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.card-content .text p{
+    font-family: 'Chillax-Light';
+    line-height: 1.7rem;
+    margin-bottom: 20px;
+}
+
+.card-content .button{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 1ms ease-in;
+}
+
+.card-content .button img{
+    background-color: var(--color-background-muted);
+    padding: 7px;
+    border-radius: 100%;
+    border: 1px solid var(--color-border-muted);
+    margin-right: 5px;
+    transition: transform 0.1s ease-in;
+}
+
+.card-content .button p{
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.card-content .button:hover > img{
+    transform: rotate(45deg);
+}
+
+.card-content .button:hover > p{
+    background-color: var(--color-text-default);
+    color: var(--color-background);
+    font-weight: 700;
+    
+}
 
 
 
@@ -198,7 +280,18 @@ a{
 }
 
 @media (max-width: 768px){
+    .logo__box{
+        justify-content: space-evenly;
+        align-items: center;
+    }
 
+    .logo__box .logo-item {
+        gap: 1em;
+    }
+
+    .logo__box .logo-item img{
+        width: 100%;
+    }
 }
 
 @media (max-width: 640px){
@@ -256,4 +349,27 @@ a{
 
     
 
+    .logo__box{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo__box .logo-item {
+        margin: 0 10px;
+        width: 50px;
+        gap: 1em;
+    }
+
+    .logo__box .logo-item img{
+        width: 100%;
+    }
+
+    .card__box{
+        grid-template-columns: repeat(auto-fit, minmax(310px, 310px));
+    }
+    .card-content{
+        padding: 30px;
+    }
+
 }
+
