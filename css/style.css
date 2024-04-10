@@ -197,10 +197,10 @@ a{
     grid-template-columns: repeat(auto-fit, minmax(445px, 445px));
     gap: 1em;
     justify-content: center;
-    margin-top: 3em;
+    margin: 4em 0;
 }
 
-.card-item{
+.card__box .card-item{
     background-color: var(--color-background-muted);
     border: 1px solid var(--color-border-muted);
 }
@@ -236,14 +236,16 @@ a{
     margin-bottom: 20px;
 }
 
-.card-content .button{
+.card-content .button,
+.work-header .button{
     display: flex;
     align-items: center;
     cursor: pointer;
     transition: 1ms ease-in;
 }
 
-.card-content .button img{
+.card-content .button img,
+.work-header .button img{
     background-color: var(--color-background-muted);
     padding: 7px;
     border-radius: 100%;
@@ -252,27 +254,170 @@ a{
     transition: transform 0.1s ease-in;
 }
 
-.card-content .button p{
+.card-content .button p,
+.work-header .button a{
     text-transform: uppercase;
     padding: 10px;
 }
 
-.card-content .button:hover > img{
+.card-content .button:hover > img,
+.work-header .button:hover > img{
     transform: rotate(45deg);
 }
 
-.card-content .button:hover > p{
+.card-content .button:hover > p,
+.work-header .button:hover > a{
     background-color: var(--color-text-default);
     color: var(--color-background);
     font-weight: 700;
     
 }
 
+.work-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 100px 0;
+}
+
+.work-header h2{
+    font-family: 'Satoshi-Light';
+    font-weight: 300;
+    font-size: 40px;
+}
+
+.work-header h2 span{
+    font-family: 'Gambetta-LightItalic';
+}
+
+.work__box{
+    display: grid;
+    grid-template-rows: repeat(2, minmax(515px, 515px));
+    grid-template-columns: repeat(auto-fit, minmax(340px, 626px));
+    gap: 1.8em;
+    margin-top: 15px;
+    justify-content: center;
+    
+}
+
+.work-card{
+    display: flex;
+    align-items: flex-end;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.work-card.card-1{
+    background-image: url("/assets/web1.jpeg");
+}
+
+.work-card.card-2{
+    background-image: url("/assets/web2.jpeg");
+}
+
+.work-card.card-3{
+    background-image: url("/assets/web3.jpeg");
+}
+
+.work-card.card-4{
+    background-image: url("/assets/web4.jpeg");
+}
+
+.work-card .work-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+    backdrop-filter: blur(10px);
+    margin: 0 40px 30px 40px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.work-content span{
+    text-transform: capitalize;
+}
+
+.work-content p{
+    font-family: 'Satoshi-Light';
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.work-content:hover{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+}
+
+.work-content:hover > span,
+.work-content:hover > p{
+    color: var(--color-background);
+    font-weight: 700;
+}
+
+.process__section{
+    margin-top: 10em;
+}
+
+.process__text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.process__text p,
+.process__text h1,
+.process__text span{
+    text-align: center;
+}
+
+.process__text p{
+    font-family: 'Satoshi-Light';
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.process__text h1{
+    font-size: 80px;
+    font-family: 'Satoshi-Light';
+    font-weight: 100;
+    line-height: 1em;
+    margin-bottom: 15px;
+}
+
+.process__text h1 span{
+    font-family: 'Gambetta-LightItalic';
+}
+
+.process__text span{
+    width: 400px;
+}
+
+.process__box{
+    grid-template-rows: 450px;
+    grid-template-columns: repeat(auto-fit, minmax(445px, 445px));
+    gap: 1em;
+}
+
+.process-card
+
+
+
+
+
+
+
+
 
 
 
 @media (max-width: 1280px){
-
+    .work__box{
+        grid-template-rows: repeat(4, minmax(515px, 515px));
+    }
 }
 
 @media (max-width: 1024px){
